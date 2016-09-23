@@ -1,0 +1,26 @@
+<div class="thread">
+
+    <p class="identifier"><a href="#">{{ post.name }}</a>    {{ post.timestamp }}      No.{{ post.id }}</p>
+	<a class="response_link" href="/reply/{{ post.id }}">Reply</a>
+
+	
+    <div class="thread_body">
+		{% if post.image %}
+			<img class="post_image" src="C:/Users/Drazen/Documents/MyApp/app/static/img/{{ post.image }}">
+		{% endif %}
+		<p>{{ post.body }}</p>
+	</div>
+	
+	
+		{% for reply in post.replies[:max] %}
+			<div class="response">
+				<p class="identifier"><a href="#">{{ reply.name }}</a> {{ reply.timestamp }}     No.{{ post.id }}</p>
+				{% if reply.image %}
+					<img class="post_image" src="C:/Users/Drazen/Documents/MyApp/app/static/img/{{ reply.image }}">
+				{% endif %}
+				<p class="paragraph">{{ reply.body }}</p>
+			</div>
+		{% endfor %}
+		
+</div>
+

@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+	{% set one_thread = True %}
+	{% include 'submission_box.html' %}
+	
+	{% set max=post.replies.count() %}
+	{% include 'post.html' %}
+	
+{% endblock %}

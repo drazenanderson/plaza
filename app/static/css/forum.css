@@ -1,0 +1,97 @@
+#banner {
+	color: white;
+	background-color: black;
+	height: 10%;
+	width: 100%;
+	clear: both;
+	text-align: center;
+	margin: 0;
+	color: white;
+	overflow: hidden;
+	position: relative;
+	top: 0px;
+}
+
+body {
+	background-color: #b9472f;
+}
+
+#logo {
+	font-size: 42pt;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	letter-spacing: 5px;
+}
+
+.thread_body {
+	min-height: 100px;
+	padding-top: 20px;
+	padding: 10px;
+	clear: both;
+}
+
+.response {
+	margin: 10px;
+	min-height: 100px;
+	padding-top: 50px;
+	padding: 10px;
+	background-color: #e6e6e6;
+	box-shadow: 2px 2px 5px ;
+	margin-left: 25px;
+	margin-right: 25px;
+	margin-bottom: 30px;
+}
+
+.thread {
+	background-color: white;
+	padding: 10px;
+	margin-bottom: 50px;
+	box-shadow: 2px 2px 5px;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#post_maker {
+	width: 30%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0;
+	overflow: hidden;
+	margin-bottom: 40px;
+}
+
+.identifier {
+	padding: 10px;
+	width: 70%;
+	float: left;
+}
+
+.response_link {
+	padding: 10px;
+	float: right;
+	margin-right: 50px;
+}
+#submit_post {
+	margin: 2px;
+}
+
+.user_input {
+	width: 100%;
+}
+
+.paragraph {
+	clear: both;
+	padding: 10px;
+}
+
+.image_select {
+	float: right;
+}
+
+.post_image {
+	float: left;
+	height: 80%;
+	width: 15%;
+	margin-right: 20px;
+}

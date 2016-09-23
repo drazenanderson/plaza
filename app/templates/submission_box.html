@@ -1,0 +1,14 @@
+<div class="well" id="post_maker">
+	<form action="" method="post" enctype="multipart/form-data" name="new_thread" class="form-horizontal" style="margin-bottom: 0;">
+		{{ form.hidden_tag() }}
+		{% if not one_thread %}
+			{{ form.subject(class_="user_input", placeholder="Subject") }}
+		{% endif %}
+		{{ form.name(class_="user_input", placeholder="Name") }}
+		{{ form.body(rows='7', class_="user_input", placeholder="Post something!") }}
+			
+		{{ form.image(class_="image_select") }}
+		<input type="submit" value="Post!" id="submit_post" class="btn btn-primary">
+				
+	</form>
+</div>
